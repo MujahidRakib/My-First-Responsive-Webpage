@@ -1,0 +1,302 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', Sans-Serif;
+  font-size: 1.3rem;
+}
+
+img{
+  max-width: 100%;
+}
+
+h1{
+  font-size: 2rem;
+  color: #A59678;
+  margin-bottom: .5em;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.nav-container{
+  background: #2E323F;
+  text-align: center;
+  padding: 1em 0;
+}
+.hamburger{
+  background: #A59678;
+  border: none;
+  border-radius: 100px;
+  padding: 5px;
+  position: absolute;
+  left: 0;
+}
+.hamburger-icon{
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+.nav-link{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: .5em;
+}
+.nav-list + .nav-list{
+  margin-top: 1em;
+}
+.sign-in{
+  padding-bottom: .5em;
+}
+.sign-up-btn{
+  background: #A59678;
+  color: #fff;
+  padding: .5em 1em;
+  border-radius: 100px;
+  font-size: 1.15rem;
+}
+
+.main-heading{
+  font-size: 3rem;
+}
+.first-section{
+  background: #3B4050;
+  padding: 3em 0;
+}
+.first-section p{
+  color: #ddd;
+  margin-bottom: .75em;
+}
+.first-section a{
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.white-text{
+  color: white;
+}
+
+.second-section{
+  background: #F1F1F1;
+  padding: 3em 0;
+}
+.second-child{
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+
+.third-section{
+  padding: 3em 0;
+}
+.third-section .child{
+  padding: .25em 0;
+}
+.third-section img{
+  padding: 1.5em 0;
+  width: 100%;
+}
+.third-child-2{
+  margin-top: 3em;
+}
+.side-child{
+  background: #3B4050;
+  text-align: center;
+  margin-bottom: .5em;
+  padding: 1.5em;
+  color: #ddd;
+}
+.side-child h1{
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+
+.fourth-section{
+  background: #3B4050;
+  padding: 3em 0;
+}
+.bottom-heading{
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  padding-bottom: .5em;
+}
+.footer-child{
+  color: #6F737F;
+}
+
+.footer-child + .footer-child{
+  margin: 1.5em 0;
+  color: #6F737F;
+}
+  .footer-child ul li{
+    padding-bottom: .5em;
+  }
+  .footer-1{
+    margin-bottom: 4em;
+  }
+  .center{
+    text-align: center;
+  }
+  .right{
+    text-align: right;
+  }
+  .left{
+    text-align: left;
+  }
+
+
+
+@media (min-width:700px) {
+  
+  .row{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-inner{
+    display: flex;
+  }
+  .hamburger{
+    display: none;
+  }
+  .nav {
+    visibility: visible;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .nav-list{
+    display: flex;
+  }
+  .nav-list + .nav-list{
+    margin: 0;
+  }
+  .list-item{
+    padding: 0;
+    margin: 0 .7em;
+  }
+  .nav-link{
+    margin: 0;
+  }
+  
+  
+  .first-container{
+    padding: 2.5em 0;
+    align-items: flex-end;
+  }
+  .first-child{
+    width: 50%;
+  }
+  .first-child p{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  .first-child a{
+    font-size: 1.5em;
+  }
+  .first-child:last-child{
+    padding-bottom: 3em;
+  }
+  .main-heading{
+    font-size: 5rem;
+  }
+  
+  
+  
+  .second-container{
+    padding: 2em 0;
+  }
+  .second-child{
+    width: 27%;
+  }
+  
+  
+  
+  
+  .third-container{
+    padding: 2.5em 0;
+  }
+  .third-child-1{
+    width: 54%;
+  }
+  .third-child-2{
+    margin: 0;
+    width: 36%;
+  }
+  
+  
+  .fourth-container{
+    padding: 1em 0;
+  }
+  .footer-1{
+    width: 40%;
+  }
+  .footer-child h1{
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  .footer-child + .footer-child{
+  margin: 0;
+  }
+  .bottom-heading{
+    font-size: 3em;
+  }
+  .footer-child{
+    text-align: left;
+  }
+  
+  
+}
+
+
+
+
+@media (min-width:700px) and (max-width:1000px) {
+  
+  .third-container{
+    display: block;
+  }
+  .third-child-1{
+    width: 100%;
+  }
+  .third-child-2{
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    margin-top: 3em;
+  }
+
+  
+  
+}
